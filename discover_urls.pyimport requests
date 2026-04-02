@@ -1,0 +1,97 @@
+from bs4 import BeautifulSoup
+import time
+from pathlib import Path
+from tqdm import tqdm
+
+def discover_drug_urls():
+    """Discover all drug URLs from Drugs.com A-K"""
+    
+    base_url = "https://www.drugs.com"
+    all_urls = set()
+    
+    # Letters A through K
+    letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k']
+    
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
+    }
+    
+    print("🔍 Discovering drug URLs from Drugs.com...")
+    print(f"📍 Fetching pages for letters: {', '.join(letters.upper())}\n")
+    
+    for letter in tqdm(letters, desc="Processing letters"):
+        try:
+            # Fetch the letter index page
+            url = f"{base_url}/drugs/?letter={letter}"
+            print(f"\n📥 Fetching: {url}")
+            
+            response = requests.get(url, headers=headers, timeout=10)
+            response.raise_for_status()
+            
+            soup = BeautifulSoup(response.content, 'html.parser')
+            
+            # Find all drug links - look for href patterns like /drugname
+            drug_links = soup.find_all('a', href=True)
+            letter_count = 0
+            
+            for link in drug_links:
+                href = link['href']
+                # Filter for drug pages
+                if href.startswith('/') and href != '/' and not href.startswith('/?'):
+                    # Avoid navigation links
+                    if not any(x in href for x in ['search', 'admin', 'condition', 'interact', 'food']):
+                        # Check if it looks like a drug page (single path component)
+                        path_parts = href.strip('/').split('/')
+                        if len(path_parts) == 1 and len(path_parts[0]) > 1:
+                            full_url = f"{base_url}{href}"
+                            all_urls.add(full_url)
+                            letter_count += 1
+            
+            print(f"✅ Found {letter_count} drugs for letter {letter.upper()}")
+            time.sleep(2)  # Be respectful to the server
+            
+        except Exception as e:
+            print(f"⚠️ Error fetching letter {letter}: {str(e)}")
+            continue
+    
+    return all_urls
+
+def save_urls(urls):
+    """Save discovered URLs to file"""
+    # Create data directory if it doesn't exist
+    Path("data").mkdir(exist_ok=True)
+    
+    output_file = "data/candidate_urls.txt"
+    
+    with open(output_file, 'w') as f:
+        for url in sorted(urls):
+            f.write(url + '\n')
+    
+    print(f"\n{'='*60}")
+    print(f"✅ Successfully discovered {len(urls)} drug URLs")
+    print(f"📁 Saved to: {output_file}")
+    print(f"{'='*60}")
+    
+    return len(urls)
+
+if __name__ == '__main__':
+    print("\n" + "="*60)
+    print("DRUGS.COM URL DISCOVERY TOOL")
+    print("="*60)
+    
+    try:
+        # Discover URLs
+        urls = discover_drug_urls()
+        
+        # Save to file
+        if urls:
+            count = save_urls(urls)
+            print(f"\n📊 Total URLs collected: {count}")
+            print(f"✨ You can now run: python3 scraper.py --resume")
+        else:
+            print("❌ No URLs found. Please check your internet connection.")
+    
+    except KeyboardInterrupt:
+        print("\n\n⚠️ Discovery interrupted by user")
+    except Exception as e:
+        print(f"\n❌ Error: {str(e)}")

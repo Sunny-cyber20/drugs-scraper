@@ -1,0 +1,27 @@
+2026-04-02 19:23:16,149 - __main__ - INFO - ================================================================================
+2026-04-02 19:23:16,149 - __main__ - INFO - Starting Drugs.com Data Scraper
+2026-04-02 19:23:16,149 - __main__ - INFO - Batch size: 50, Request delay: 1.5s
+2026-04-02 19:23:16,149 - __main__ - INFO - ================================================================================
+2026-04-02 19:23:16,149 - __main__ - INFO - Loaded 578 URLs from /Users/sunnyyadav/Documents/drugs-scraper/data/candidate_urls.txt
+2026-04-02 19:23:16,149 - __main__ - INFO - Total URLs: 578, Remaining: 578
+2026-04-02 19:24:51,053 - __main__ - INFO - Batch 1/12 complete. Results: 50, Failed: 0, ETA: 16m 42s
+2026-04-02 19:26:31,272 - __main__ - INFO - Batch 2/12 complete. Results: 100, Failed: 0, ETA: 15m 32s
+2026-04-02 19:28:07,984 - __main__ - INFO - Batch 3/12 complete. Results: 150, Failed: 0, ETA: 13m 52s
+2026-04-02 19:29:45,117 - __main__ - INFO - Batch 4/12 complete. Results: 200, Failed: 0, ETA: 12m 15s
+2026-04-02 19:31:22,427 - __main__ - INFO - Batch 5/12 complete. Results: 250, Failed: 0, ETA: 10m 37s
+2026-04-02 19:33:01,446 - __main__ - INFO - Batch 6/12 complete. Results: 300, Failed: 0, ETA: 9m 2s
+2026-04-02 19:34:40,046 - __main__ - INFO - Batch 7/12 complete. Results: 350, Failed: 0, ETA: 7m 25s
+2026-04-02 19:36:23,781 - __main__ - INFO - Batch 8/12 complete. Results: 400, Failed: 0, ETA: 5m 50s
+2026-04-02 19:37:57,611 - __main__ - INFO - Batch 9/12 complete. Results: 450, Failed: 0, ETA: 4m 10s
+2026-04-02 19:39:34,966 - __main__ - INFO - Batch 10/12 complete. Results: 500, Failed: 0, ETA: 2m 32s
+2026-04-02 19:41:20,568 - __main__ - INFO - Batch 11/12 complete. Results: 550, Failed: 0, ETA: 0m 55s
+2026-04-02 19:42:20,640 - __main__ - INFO - Batch 12/12 complete. Results: 578, Failed: 0, ETA: 0m 0s
+2026-04-02 19:42:20,731 - __main__ - INFO - Saved 578 results to /Users/sunnyyadav/Documents/drugs-scraper/data/drugs_data.json
+2026-04-02 19:42:20,731 - __main__ - INFO - ================================================================================
+2026-04-02 19:42:20,731 - __main__ - INFO - SCRAPING COMPLETE
+2026-04-02 19:42:20,731 - __main__ - INFO - Total time: 19m 4s
+2026-04-02 19:42:20,731 - __main__ - INFO - Total results: 578
+2026-04-02 19:42:20,731 - __main__ - INFO - Failed URLs: 0
+2026-04-02 19:42:20,731 - __main__ - INFO - Success rate: 100.00%
+2026-04-02 19:42:20,731 - __main__ - INFO - Output file: /Users/sunnyyadav/Documents/drugs-scraper/data/drugs_data.json
+2026-04-02 19:42:20,731 - __main__ - INFO - ================================================================================
