@@ -52,3 +52,27 @@
 2026-04-03 14:24:24,406 - __main__ - INFO - Success rate: 90.83%
 2026-04-03 14:24:24,406 - __main__ - INFO - Output file: /Users/sunnyyadav/Documents/drugs-scraper/data/drugs_data.json
 2026-04-03 14:24:24,406 - __main__ - INFO - ================================================================================
+2026-04-03 14:52:30,444 - __main__ - INFO - ================================================================================
+2026-04-03 14:52:30,444 - __main__ - INFO - Starting Drugs.com Data Scraper
+2026-04-03 14:52:30,444 - __main__ - INFO - Batch size: 50, Delay: 1.5s
+2026-04-03 14:52:30,444 - __main__ - INFO - ================================================================================
+2026-04-03 14:52:30,445 - __main__ - INFO - Loaded 578 URLs
+2026-04-03 14:52:30,445 - __main__ - INFO - Total: 578, Remaining: 578
+2026-04-03 14:53:54,907 - __main__ - INFO - Batch 1/12: Results=29, Failed=21, ETA=14m 51s
+2026-04-03 14:55:20,226 - __main__ - INFO - Batch 2/12: Results=51, Failed=49, ETA=13m 31s
+2026-04-03 14:56:42,981 - __main__ - INFO - Batch 3/12: Results=67, Failed=83, ETA=12m 0s
+2026-04-03 14:58:06,754 - __main__ - INFO - Batch 4/12: Results=87, Failed=113, ETA=10m 35s
+2026-04-03 14:59:29,832 - __main__ - INFO - Batch 5/12: Results=114, Failed=136, ETA=9m 10s
+2026-04-03 15:00:52,815 - __main__ - INFO - Batch 6/12: Results=136, Failed=164, ETA=7m 45s
+2026-04-03 15:02:16,011 - __main__ - INFO - Batch 7/12: Results=156, Failed=194, ETA=6m 21s
+2026-04-03 15:03:39,360 - __main__ - INFO - Batch 8/12: Results=180, Failed=220, ETA=4m 57s
+2026-04-03 15:05:01,568 - __main__ - INFO - Batch 9/12: Results=191, Failed=259, ETA=3m 33s
+2026-04-03 15:06:23,105 - __main__ - INFO - Batch 10/12: Results=198, Failed=302, ETA=2m 9s
+2026-04-03 15:07:44,775 - __main__ - INFO - Batch 11/12: Results=208, Failed=342, ETA=0m 46s
+2026-04-03 15:08:34,487 - __main__ - INFO - Batch 12/12: Results=215, Failed=363, ETA=0m 0s
+2026-04-03 15:08:34,498 - __main__ - INFO - Saved 215 results
+2026-04-03 15:08:34,500 - __main__ - INFO - ================================================================================
+2026-04-03 15:08:34,500 - __main__ - INFO - SCRAPING COMPLETE
+2026-04-03 15:08:34,500 - __main__ - INFO - Time: 16m 4s
+2026-04-03 15:08:34,500 - __main__ - INFO - Results: 215, Failed: 363
+2026-04-03 15:08:34,500 - __main__ - INFO - ================================================================================
