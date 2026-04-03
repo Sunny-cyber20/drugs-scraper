@@ -25,3 +25,30 @@
 2026-04-02 19:42:20,731 - __main__ - INFO - Success rate: 100.00%
 2026-04-02 19:42:20,731 - __main__ - INFO - Output file: /Users/sunnyyadav/Documents/drugs-scraper/data/drugs_data.json
 2026-04-02 19:42:20,731 - __main__ - INFO - ================================================================================
+2026-04-03 14:06:11,963 - __main__ - INFO - ================================================================================
+2026-04-03 14:06:11,963 - __main__ - INFO - Starting Drugs.com Data Scraper
+2026-04-03 14:06:11,963 - __main__ - INFO - Batch size: 50, Request delay: 1.5s
+2026-04-03 14:06:11,963 - __main__ - INFO - ================================================================================
+2026-04-03 14:06:11,963 - __main__ - INFO - Loaded 578 URLs from /Users/sunnyyadav/Documents/drugs-scraper/data/candidate_urls.txt
+2026-04-03 14:06:11,963 - __main__ - INFO - Total URLs: 578, Remaining: 578
+2026-04-03 14:07:46,104 - __main__ - INFO - Batch 1/12 complete. Results: 45, Failed: 5, ETA: 16m 34s
+2026-04-03 14:09:20,077 - __main__ - INFO - Batch 2/12 complete. Results: 93, Failed: 7, ETA: 14m 59s
+2026-04-03 14:10:51,338 - __main__ - INFO - Batch 3/12 complete. Results: 143, Failed: 7, ETA: 13m 17s
+2026-04-03 14:12:24,820 - __main__ - INFO - Batch 4/12 complete. Results: 190, Failed: 10, ETA: 11m 44s
+2026-04-03 14:13:57,390 - __main__ - INFO - Batch 5/12 complete. Results: 239, Failed: 11, ETA: 10m 10s
+2026-04-03 14:15:31,292 - __main__ - INFO - Batch 6/12 complete. Results: 288, Failed: 12, ETA: 8m 38s
+2026-04-03 14:17:08,467 - __main__ - INFO - Batch 7/12 complete. Results: 336, Failed: 14, ETA: 7m 7s
+2026-04-03 14:18:44,623 - __main__ - INFO - Batch 8/12 complete. Results: 378, Failed: 22, ETA: 5m 34s
+2026-04-03 14:20:16,184 - __main__ - INFO - Batch 9/12 complete. Results: 428, Failed: 22, ETA: 4m 0s
+2026-04-03 14:21:49,714 - __main__ - INFO - Batch 10/12 complete. Results: 478, Failed: 22, ETA: 2m 26s
+2026-04-03 14:23:28,608 - __main__ - INFO - Batch 11/12 complete. Results: 513, Failed: 37, ETA: 0m 52s
+2026-04-03 14:24:24,380 - __main__ - INFO - Batch 12/12 complete. Results: 525, Failed: 53, ETA: 0m 0s
+2026-04-03 14:24:24,405 - __main__ - INFO - Saved 525 validated results to /Users/sunnyyadav/Documents/drugs-scraper/data/drugs_data.json
+2026-04-03 14:24:24,405 - __main__ - INFO - ================================================================================
+2026-04-03 14:24:24,405 - __main__ - INFO - SCRAPING COMPLETE
+2026-04-03 14:24:24,406 - __main__ - INFO - Total time: 18m 12s
+2026-04-03 14:24:24,406 - __main__ - INFO - Total results: 525
+2026-04-03 14:24:24,406 - __main__ - INFO - Failed URLs: 53
+2026-04-03 14:24:24,406 - __main__ - INFO - Success rate: 90.83%
+2026-04-03 14:24:24,406 - __main__ - INFO - Output file: /Users/sunnyyadav/Documents/drugs-scraper/data/drugs_data.json
+2026-04-03 14:24:24,406 - __main__ - INFO - ================================================================================
