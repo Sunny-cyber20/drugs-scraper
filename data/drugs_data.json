@@ -1,28 +1,9 @@
 [
   {
-    "drug_name": "Abecma",
-    "url": "https://www.drugs.com/abecma.html",
-    "drug_class": "Chimeric antigen receptor (CAR) T-cell therapies",
-    "generic_name": "idecabtagene vicleucel",
-    "brand_names": [],
-    "related_conditions": [
-      "active infections or inflammatory disorders.",
-      "unresolved serious adverse events (especially pulmonary events, cardiac events, or hypotension), including those after preceding chemotherapies,"
-    ]
-  },
-  {
     "drug_name": "Abilify Asimtufii",
     "url": "https://www.drugs.com/abilify-asimtufii.html",
     "drug_class": "Atypical antipsychotics",
     "generic_name": "aripiprazole",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
-    "drug_name": "Abilify Maintena",
-    "url": "https://www.drugs.com/abilify-maintena.html",
-    "drug_class": "Atypical antipsychotics",
-    "generic_name": "aripiprazole lauroxil",
     "brand_names": [],
     "related_conditions": []
   },
@@ -39,18 +20,8 @@
     "url": "https://www.drugs.com/acetaminophen.html",
     "drug_class": "Miscellaneous analgesics",
     "generic_name": "acetaminophen",
-    "brand_names": [
-      "Stomach pain",
-      "Itching",
-      "Loss of appetite",
-      "Dark urine, clay-colored stools",
-      "Nausea",
-      "Tiredness",
-      "Headache."
-    ],
-    "related_conditions": [
-      "Do not use acetaminophen:"
-    ]
+    "brand_names": [],
+    "related_conditions": []
   },
   {
     "drug_name": "Actemra",
@@ -69,30 +40,9 @@
     "related_conditions": []
   },
   {
-    "drug_name": "Adalimumab",
-    "url": "https://www.drugs.com/adalimumab.html",
-    "drug_class": "es: Antirheumatics, TNF alfa inhibitors",
-    "generic_name": "Designation",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
-    "drug_name": "Adderall",
-    "url": "https://www.drugs.com/adderall.html",
-    "drug_class": "CNS stimulants",
-    "generic_name": "amphetamine and dextroamphetamine",
-    "brand_names": [],
-    "related_conditions": [
-      "Age 3 to 5 Years:",
-      "Maintenance Dose: Daily dose may be raised in 2.5 mg increments at weekly intervals until optimal response is obtained.",
-      "Usual Pediatric Dose of Adderall for Attention Deficit Disorder:",
-      "Initial Dose: 2.5 mg orally per day"
-    ]
-  },
-  {
     "drug_name": "Afinitor",
     "url": "https://www.drugs.com/afinitor.html",
-    "drug_class": "es: MTOR inhibitors, Selective immunosuppressants",
+    "drug_class": "mTOR inhibitors",
     "generic_name": "everolimus",
     "brand_names": [],
     "related_conditions": []
@@ -122,14 +72,6 @@
     "related_conditions": []
   },
   {
-    "drug_name": "Albuterol Inhalation",
-    "url": "https://www.drugs.com/albuterol.html",
-    "drug_class": "Adrenergic bronchodilators",
-    "generic_name": "albuterol inhalation",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
     "drug_name": "Alecensa",
     "url": "https://www.drugs.com/alecensa.html",
     "drug_class": "Multikinase inhibitors",
@@ -148,7 +90,7 @@
   {
     "drug_name": "Allopurinol",
     "url": "https://www.drugs.com/allopurinol.html",
-    "drug_class": "es: Antigout agents, Antihyperuricemic agents",
+    "drug_class": "antigout agents",
     "generic_name": "allopurinol",
     "brand_names": [],
     "related_conditions": []
@@ -158,14 +100,6 @@
     "url": "https://www.drugs.com/alprazolam.html",
     "drug_class": "Benzodiazepines",
     "generic_name": "alprazolam",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
-    "drug_name": "Alprolix",
-    "url": "https://www.drugs.com/alprolix.html",
-    "drug_class": "Miscellaneous coagulation modifiers",
-    "generic_name": "Coagulation Factor IX",
     "brand_names": [],
     "related_conditions": []
   },
@@ -180,24 +114,8 @@
   {
     "drug_name": "Amantadine",
     "url": "https://www.drugs.com/amantadine.html",
-    "drug_class": "es: Adamantane antivirals, Dopaminergic antiparkinsonism agents",
+    "drug_class": "adamantane antivirals",
     "generic_name": "amantadine",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
-    "drug_name": "Ambien",
-    "url": "https://www.drugs.com/ambien.html",
-    "drug_class": "Miscellaneous anxiolytics, sedatives and hypnotics",
-    "generic_name": "zolpidem",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
-    "drug_name": "Amiodarone",
-    "url": "https://www.drugs.com/amiodarone.html",
-    "drug_class": "Group III antiarrhythmics",
-    "generic_name": "amiodarone tablets",
     "brand_names": [],
     "related_conditions": []
   },
@@ -218,25 +136,9 @@
     "related_conditions": []
   },
   {
-    "drug_name": "Apriso",
-    "url": "https://www.drugs.com/apriso.html",
-    "drug_class": "",
-    "generic_name": "mesalamine",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
-    "drug_name": "Aristada Injection",
-    "url": "https://www.drugs.com/aristada.html",
-    "drug_class": "Atypical antipsychotics",
-    "generic_name": "aripiprazole lauroxil",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
     "drug_name": "Aspirin",
     "url": "https://www.drugs.com/aspirin.html",
-    "drug_class": "es: Platelet aggregation inhibitors, Salicylates",
+    "drug_class": "platelet aggregation inhibitors",
     "generic_name": "aspirin",
     "brand_names": [],
     "related_conditions": []
@@ -258,22 +160,6 @@
     "related_conditions": []
   },
   {
-    "drug_name": "Auvelity",
-    "url": "https://www.drugs.com/auvelity.html",
-    "drug_class": "Psychotherapeutic combinations",
-    "generic_name": "bupropion and dextromethorphan",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
-    "drug_name": "Auvi",
-    "url": "https://www.drugs.com/auvi-q.html",
-    "drug_class": "es: Adrenergic bronchodilators, Catecholamines, Vasopressors",
-    "generic_name": "epinephrine injection",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
     "drug_name": "Avsola",
     "url": "https://www.drugs.com/avsola.html",
     "drug_class": "TNF alfa inhibitors",
@@ -286,9 +172,7 @@
     "url": "https://www.drugs.com/baclofen.html",
     "drug_class": "Skeletal muscle relaxants",
     "generic_name": "baclofen",
-    "brand_names": [
-      "Parkinson's disease;"
-    ],
+    "brand_names": [],
     "related_conditions": []
   },
   {
@@ -296,22 +180,6 @@
     "url": "https://www.drugs.com/baqsimi.html",
     "drug_class": "Glucose elevating agents",
     "generic_name": "glucagon",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
-    "drug_name": "Belbuca",
-    "url": "https://www.drugs.com/belbuca.html",
-    "drug_class": "Opioids (narcotic analgesics)",
-    "generic_name": "buprenorphine",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
-    "drug_name": "Belsomra",
-    "url": "https://www.drugs.com/belsomra.html",
-    "drug_class": "Miscellaneous anxiolytics, sedatives and hypnotics",
-    "generic_name": "suvorexant",
     "brand_names": [],
     "related_conditions": []
   },
@@ -324,22 +192,6 @@
     "related_conditions": []
   },
   {
-    "drug_name": "Bentyl",
-    "url": "https://www.drugs.com/bentyl.html",
-    "drug_class": "Anticholinergics / antispasmodics",
-    "generic_name": "dicyclomine",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
-    "drug_name": "Bevacizumab",
-    "url": "https://www.drugs.com/bevacizumab.html",
-    "drug_class": "VEGF/VEGFR inhibitors",
-    "generic_name": "Bevacizumab",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
     "drug_name": "Beyfortus",
     "url": "https://www.drugs.com/beyfortus.html",
     "drug_class": "Antiviral monoclonal antibodies",
@@ -348,29 +200,10 @@
     "related_conditions": []
   },
   {
-    "drug_name": "Blincyto",
-    "url": "https://www.drugs.com/blincyto.html",
-    "drug_class": "Bispecific T-cell engagers (BiTE)",
-    "generic_name": "blinatumomab",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
     "drug_name": "Botox: Medical & Cosmetic Uses",
     "url": "https://www.drugs.com/botox.html",
     "drug_class": "Skeletal muscle relaxants",
-    "generic_name": "onabotulinumtoxinA",
-    "brand_names": [],
-    "related_conditions": [
-      "30 minutes in your doctor's office.",
-      "Botox injections typically take just 10"
-    ]
-  },
-  {
-    "drug_name": "Breyanzi",
-    "url": "https://www.drugs.com/breyanzi.html",
-    "drug_class": "Chimeric antigen receptor (CAR) T-cell therapies",
-    "generic_name": "lisocabtagene maraleucel",
+    "generic_name": "onabotulinumtoxina",
     "brand_names": [],
     "related_conditions": []
   },
@@ -409,58 +242,26 @@
   {
     "drug_name": "Budesonide (oral)",
     "url": "https://www.drugs.com/budesonide.html",
-    "drug_class": "es: Glucocorticoids, Inhaled corticosteroids",
+    "drug_class": "glucocorticoids",
     "generic_name": "budesonide",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
-    "drug_name": "Bunavail",
-    "url": "https://www.drugs.com/bunavail.html",
-    "drug_class": "Narcotic analgesic combinations",
-    "generic_name": "buprenorphine and naloxone",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
-    "drug_name": "Buprenorphine",
-    "url": "https://www.drugs.com/buprenorphine.html",
-    "drug_class": "Opioids (narcotic analgesics)",
-    "generic_name": "buprenorphine",
     "brand_names": [],
     "related_conditions": []
   },
   {
     "drug_name": "Bupropion",
     "url": "https://www.drugs.com/bupropion.html",
-    "drug_class": "es: Miscellaneous antidepressants, Smoking cessation agents",
+    "drug_class": "miscellaneous antidepressants",
     "generic_name": "bupropion",
     "brand_names": [],
     "related_conditions": []
   },
   {
-    "drug_name": "Cabenuva",
-    "url": "https://www.drugs.com/cabenuva.html",
-    "drug_class": "Antiviral combinations",
-    "generic_name": "cabotegravir and rilpivirine",
-    "brand_names": [],
-    "related_conditions": [
-      "Cabenuva should not be used with certain medications, such as carbamazepine, oxcarbazepine, phenobarbital, phenytoin, or rifabutin.",
-      "To make sure that the Cabenuva injection kit is safe for you, tell your doctor if you have ever had:",
-      "Cabenuva should not be used if you have had an allergic reaction to it previously or if you are allergic to the active ingredients, cabotegravir or rilpivirine, or any of the inactive ingredients.",
-      "Before taking this medicine"
-    ]
-  },
-  {
     "drug_name": "Cabometyx",
     "url": "https://www.drugs.com/cabometyx.html",
-    "drug_class": "es: Multikinase inhibitors, VEGF/VEGFR inhibitors",
+    "drug_class": "multikinase inhibitors",
     "generic_name": "cabozantinib",
     "brand_names": [],
-    "related_conditions": [
-      "Many patients respond to the drug",
-      "Continue reading"
-    ]
+    "related_conditions": []
   },
   {
     "drug_name": "Calquence",
@@ -475,19 +276,6 @@
     "url": "https://www.drugs.com/camzyos.html",
     "drug_class": "Miscellaneous cardiovascular agents",
     "generic_name": "mavacamten",
-    "brand_names": [],
-    "related_conditions": [
-      "Get emergency medical help if you have signs of an allergic reaction: hives; difficulty breathing; swelling of your face, lips, tongue, or throat.",
-      "approved medicine on April 28, 2022.",
-      "Camzyos is indicated for adults with symptomatic obstructive hypertrophic cardiomyopathy (HCM) to help improve functional capacity and symptoms. It can be used in patients with New York Heart Association (NYHA) class II",
-      "III obstructive HCM. Camzyos became an FDA"
-    ]
-  },
-  {
-    "drug_name": "Canasa",
-    "url": "https://www.drugs.com/canasa.html",
-    "drug_class": "",
-    "generic_name": "mesalamine",
     "brand_names": [],
     "related_conditions": []
   },
@@ -506,17 +294,6 @@
     "generic_name": "carbamazepine",
     "brand_names": [],
     "related_conditions": []
-  },
-  {
-    "drug_name": "Carvykti",
-    "url": "https://www.drugs.com/carvykti.html",
-    "drug_class": "Chimeric antigen receptor (CAR) T-cell therapies",
-    "generic_name": "ciltacabtagene autoleucel",
-    "brand_names": [],
-    "related_conditions": [
-      "Have been treated with:",
-      "Have received at least one prior line of therapy"
-    ]
   },
   {
     "drug_name": "Celexa",
@@ -551,25 +328,11 @@
     "related_conditions": []
   },
   {
-    "drug_name": "Clonidine",
-    "url": "https://www.drugs.com/clonidine.html",
-    "drug_class": "Antiadrenergic agents, centrally acting",
-    "generic_name": "clonidine",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
     "drug_name": "Colchicine",
     "url": "https://www.drugs.com/colchicine.html",
     "drug_class": "Antigout agents",
     "generic_name": "colchicine",
-    "brand_names": [
-      "Severe diarrhea or vomiting.",
-      "Muscle weakness or pain",
-      "Unusual bleeding or bruising",
-      "Increased infections",
-      "Feel weak or tired"
-    ],
+    "brand_names": [],
     "related_conditions": []
   },
   {
@@ -585,10 +348,7 @@
     "url": "https://www.drugs.com/dapagliflozin.html",
     "drug_class": "SGLT-2 inhibitors",
     "generic_name": "dapagliflozin",
-    "brand_names": [
-      "On dialysis:Contraindicated",
-      "See \u201cImportant information\u201d above."
-    ],
+    "brand_names": [],
     "related_conditions": []
   },
   {
@@ -600,47 +360,12 @@
     "related_conditions": []
   },
   {
-    "drug_name": "Dayvigo",
-    "url": "https://www.drugs.com/dayvigo.html",
-    "drug_class": "Miscellaneous anxiolytics, sedatives and hypnotics",
-    "generic_name": "lemborexant",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
-    "drug_name": "Delzicol",
-    "url": "https://www.drugs.com/delzicol.html",
-    "drug_class": "",
-    "generic_name": "mesalamine",
-    "brand_names": [],
-    "related_conditions": [
-      "How should I take Delzicol?"
-    ]
-  },
-  {
     "drug_name": "Denosumab",
     "url": "https://www.drugs.com/denosumab.html",
     "drug_class": "Miscellaneous bone resorption inhibitors",
     "generic_name": "denosumab",
-    "brand_names": [
-      "Pain in extremities",
-      "Serious infections",
-      "Low phosphate levels",
-      "Cystitis.",
-      "Nausea",
-      "Atypical femoral fractures",
-      "Hypercholesterolemia",
-      "Suppression of bone turnover.",
-      "Joint pain",
-      "Fatigue/lack of energy",
-      "Back pain",
-      "Headache.",
-      "Musculoskeletal pain"
-    ],
-    "related_conditions": [
-      "Interactions",
-      "Patient counseling"
-    ]
+    "brand_names": [],
+    "related_conditions": []
   },
   {
     "drug_name": "Dexamethasone",
@@ -655,15 +380,13 @@
     "url": "https://www.drugs.com/diastat-acudial.html",
     "drug_class": "Benzodiazepine anticonvulsants",
     "generic_name": "diazepam",
-    "brand_names": [
-      "Get the Diastat AcuDial."
-    ],
+    "brand_names": [],
     "related_conditions": []
   },
   {
     "drug_name": "Diazepam",
     "url": "https://www.drugs.com/diazepam.html",
-    "drug_class": "es: Benzodiazepine anticonvulsants, Benzodiazepines",
+    "drug_class": "benzodiazepine anticonvulsants",
     "generic_name": "diazepam",
     "brand_names": [],
     "related_conditions": []
@@ -671,7 +394,7 @@
   {
     "drug_name": "Digoxin",
     "url": "https://www.drugs.com/digoxin.html",
-    "drug_class": "es: Group V antiarrhythmics, Inotropic agents",
+    "drug_class": "group V antiarrhythmics",
     "generic_name": "digoxin",
     "brand_names": [],
     "related_conditions": []
@@ -685,42 +408,11 @@
     "related_conditions": []
   },
   {
-    "drug_name": "Dilaudid",
-    "url": "https://www.drugs.com/dilaudid.html",
-    "drug_class": "Opioids (narcotic analgesics)",
-    "generic_name": "hydromorphone",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
     "drug_name": "Diltiazem",
     "url": "https://www.drugs.com/diltiazem.html",
-    "drug_class": "es: Calcium channel blockers, Group IV antiarrhythmics",
+    "drug_class": "calcium channel blockers",
     "generic_name": "diltiazem",
     "brand_names": [],
-    "related_conditions": []
-  },
-  {
-    "drug_name": "Domperidone",
-    "url": "https://www.drugs.com/domperidone.html",
-    "drug_class": "",
-    "generic_name": "domperidone",
-    "brand_names": [
-      "Feeling drowsy",
-      "Rash",
-      "Swallowing or breathing problems",
-      "Dry mouth",
-      "Headaches",
-      "Diarrhea",
-      "Abnormal eye movements",
-      "Feeling anxious",
-      "Breast enlargement in men",
-      "Painful or tender breasts",
-      "First wash your hands.",
-      "Feeling agitated or irritable",
-      "Inability to urinate",
-      "To increase breastmilk supply"
-    ],
     "related_conditions": []
   },
   {
@@ -732,45 +424,9 @@
     "related_conditions": []
   },
   {
-    "drug_name": "Doxepin",
-    "url": "https://www.drugs.com/doxepin.html",
-    "drug_class": "es: Miscellaneous anxiolytics, sedatives and hypnotics, Tricyclic antidepressants",
-    "generic_name": "doxepin",
-    "brand_names": [
-      "Severe trouble sleeping",
-      "Reckless behavior",
-      "Flushing",
-      "Coma",
-      "Sleep-walking.",
-      "Unusually grand ideas",
-      "Drowsiness or tiredness",
-      "Feeling overly sleepy",
-      "Constipation",
-      "Upper respiratory tract infection.",
-      "Sweating",
-      "Fast heartbeat",
-      "Dizziness",
-      "Agitation",
-      "Changes in blood pressure",
-      "Loss of coordination",
-      "Nausea, vomiting, diarrhea.",
-      "Confusion",
-      "Excessive happiness or irritability",
-      "Greatly increased energy",
-      "Dry mouth",
-      "Nausea",
-      "Racing thoughts",
-      "Tiredness",
-      "Making and eating food",
-      "Having sex",
-      "Talking on the phone"
-    ],
-    "related_conditions": []
-  },
-  {
     "drug_name": "Doxycycline",
     "url": "https://www.drugs.com/doxycycline.html",
-    "drug_class": "es: Miscellaneous antimalarials, Tetracyclines",
+    "drug_class": "miscellaneous antimalarials",
     "generic_name": "doxycycline",
     "brand_names": [],
     "related_conditions": []
@@ -792,37 +448,12 @@
     "related_conditions": []
   },
   {
-    "drug_name": "DuoNeb",
-    "url": "https://www.drugs.com/duoneb.html",
-    "drug_class": "Bronchodilator combinations",
-    "generic_name": "albuterol and ipratropium",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
     "drug_name": "Dupixent",
     "url": "https://www.drugs.com/dupixent.html",
     "drug_class": "Interleukin inhibitors",
     "generic_name": "dupilumab",
     "brand_names": [],
-    "related_conditions": [
-      "corticosteroid",
-      "Chronic Obstructive Pulmonary Disease in adults, that is inadequately controlled and has an eosinophilic phenotype, as add",
-      "Prurigo nodularis (PN) in adults",
-      "Bullous pemphigoid in adults.",
-      "on maintenance treatment.",
-      "Moderate",
-      "nasal surgery.",
-      "severe asthma as add",
-      "Moderate to severe atopic dermatitis (AD) (eczema) in adults and children 6 months and older whose AD is not adequately controlled with topical prescription treatments or when those treatments are not advisable. Can be used with or without topical corticosteroids.",
-      "Allergic fungal rhinosinusitis (AFRS)\u00a0in adults and children 6 years and older who have a history of sino",
-      "Chronic rhinosinusitis with nasal polyps (CRSwNP) in adults and children 12 years and older with inadequately controlled CRSwNP as an add",
-      "on maintenance therapy in adults and children aged 6 years and older with asthma characterized by an\u00a0eosinophilic phenotype or with oral",
-      "Chronic spontaneous urticaria in adults and children aged 12 and older who remain symptomatic despite H1 antihistamine treatment. Dupixent is not approved for other types of urticaria.",
-      "on maintenance treatment. Not for the relief of acute bronchospasm.",
-      "dependent asthma. Dupixent injection is not for the relief of acute bronchospasm or status asthmaticus.",
-      "Eosinophilic esophagitis (EOE) in adults and children aged 1 year and older, weighing at least 15kg (33 lbs)"
-    ]
+    "related_conditions": []
   },
   {
     "drug_name": "Ebglyss",
@@ -836,36 +467,17 @@
     "drug_name": "Elagolix",
     "url": "https://www.drugs.com/elagolix.html",
     "drug_class": "Gonadotropin-releasing hormone antagonists",
-    "generic_name": "Elagolix",
-    "brand_names": [
-      "See \u201cImportant information\u201d"
-    ],
-    "related_conditions": []
-  },
-  {
-    "drug_name": "Elevidys",
-    "url": "https://www.drugs.com/elevidys.html",
-    "drug_class": "Miscellaneous uncategorized agents",
-    "generic_name": "delandistrogene moxeparvovec-rokl",
+    "generic_name": "elagolix",
     "brand_names": [],
-    "related_conditions": [
-      "Elevidys is not recommended if you have:",
-      "Elevidys is contraindicated in patients with any deletion in exon 8 and/or exon 9, including a deletion of any portion or the entirety of these exons, in the DMD gene."
-    ]
+    "related_conditions": []
   },
   {
     "drug_name": "Eliquis",
     "url": "https://www.drugs.com/eliquis.html",
     "drug_class": "Factor Xa inhibitors",
     "generic_name": "apixaban",
-    "brand_names": [
-      "Knee replacement: 12 days",
-      "Hip replacement: 35 days"
-    ],
-    "related_conditions": [
-      "Initial dose: 10 mg orally 2 times a day for 7 days",
-      "Maintenance dose: 5 mg orally 2 times a day"
-    ]
+    "brand_names": [],
+    "related_conditions": []
   },
   {
     "drug_name": "Empaveli",
@@ -892,26 +504,12 @@
     "related_conditions": []
   },
   {
-    "drug_name": "Entresto",
-    "url": "https://www.drugs.com/entresto.html",
-    "drug_class": "Angiotensin receptor blockers and neprilysin inhibitors",
-    "generic_name": "sacubitril and valsartan",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
     "drug_name": "Entyvio",
     "url": "https://www.drugs.com/entyvio.html",
     "drug_class": "Selective immunosuppressants",
     "generic_name": "vedolizumab",
     "brand_names": [],
-    "related_conditions": [
-      "severely active UC and CD. This approval was expanded to include the maintenance treatment of UC (September, 2023) and CD (April, 2024).",
-      "Entyvio is used to treat moderately to severely active ulcerative colitis (UC) or Crohn's disease (CD) in adults. It reduces gut",
-      "administered using a prefilled syringe or pen).",
-      "specific inflammation without affecting the entire immune system. Entyvio is administered by an intravenous infusion (healthcare provider) or subcutaneous injection (healthcare provider or self",
-      "Entyvio (vedolizumab) first gained FDA approval on May 20, 2014, for the treatment of moderately"
-    ]
+    "related_conditions": []
   },
   {
     "drug_name": "Epidiolex",
@@ -919,19 +517,12 @@
     "drug_class": "Miscellaneous anticonvulsants",
     "generic_name": "cannabidiol",
     "brand_names": [],
-    "related_conditions": [
-      "loss of appetite, nausea, vomiting",
-      "right upper stomach area pain or discomfort.",
-      "unusual darkening of the urine",
-      "itching",
-      "yellowing of the skin or the whites of the eyes (jaundice)",
-      "fever, feeling unwell, unusual tiredness"
-    ]
+    "related_conditions": []
   },
   {
     "drug_name": "EpiPen",
     "url": "https://www.drugs.com/epipen.html",
-    "drug_class": "es: Adrenergic bronchodilators, Catecholamines, Vasopressors",
+    "drug_class": "adrenergic bronchodilators",
     "generic_name": "epinephrine",
     "brand_names": [],
     "related_conditions": []
@@ -953,26 +544,10 @@
     "related_conditions": []
   },
   {
-    "drug_name": "Estradiol",
-    "url": "https://www.drugs.com/estradiol.html",
-    "drug_class": "Estrogens",
-    "generic_name": "estradiol oral",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
-    "drug_name": "Eszopiclone",
-    "url": "https://www.drugs.com/eszopiclone.html",
-    "drug_class": "Miscellaneous anxiolytics, sedatives and hypnotics",
-    "generic_name": "eszopiclone",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
     "drug_name": "Etanercept",
     "url": "https://www.drugs.com/etanercept.html",
-    "drug_class": "es: Antirheumatics, TNF alfa inhibitors",
-    "generic_name": "Etanercept",
+    "drug_class": "antirheumatics",
+    "generic_name": "etanercept",
     "brand_names": [],
     "related_conditions": []
   },
@@ -993,48 +568,10 @@
     "related_conditions": []
   },
   {
-    "drug_name": "Evusheld",
-    "url": "https://www.drugs.com/evusheld.html",
-    "drug_class": "Antiviral combinations",
-    "generic_name": "tixagevimab and cilgavimab",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
     "drug_name": "Exemestane",
     "url": "https://www.drugs.com/exemestane.html",
-    "drug_class": "es: Aromatase inhibitors, Hormones / antineoplastics",
+    "drug_class": "aromatase inhibitors",
     "generic_name": "exemestane",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
-    "drug_name": "Eylea",
-    "url": "https://www.drugs.com/eylea.html",
-    "drug_class": "Anti-angiogenic ophthalmic agents",
-    "generic_name": "aflibercept ophthalmic",
-    "brand_names": [
-      "Discharge from the eye",
-      "Sensitivity to light",
-      "Headache with eye symptoms",
-      "Nausea or vomiting",
-      "Eye pain",
-      "Hives",
-      "Flashes of light",
-      "Difficulty breathing",
-      "Retinal detachment",
-      "Cataracts",
-      "Seeing halos around lights."
-    ],
-    "related_conditions": [
-      "Images"
-    ]
-  },
-  {
-    "drug_name": "Eysuvis",
-    "url": "https://www.drugs.com/eysuvis.html",
-    "drug_class": "Ophthalmic steroids",
-    "generic_name": "loteprednol etabonate",
     "brand_names": [],
     "related_conditions": []
   },
@@ -1063,29 +600,12 @@
     "related_conditions": []
   },
   {
-    "drug_name": "Fentanyl",
-    "url": "https://www.drugs.com/fentanyl.html",
-    "drug_class": "Opioids (narcotic analgesics)",
-    "generic_name": "fentanyl",
-    "brand_names": [
-      "Stiff muscles",
-      "Trouble walking",
-      "Extreme drowsiness",
-      "High body temperature",
-      "Agitation"
-    ],
-    "related_conditions": []
-  },
-  {
     "drug_name": "Fintepla",
     "url": "https://www.drugs.com/fintepla.html",
-    "drug_class": "es: CNS stimulants, Miscellaneous anticonvulsants",
+    "drug_class": "CNS stimulants",
     "generic_name": "fenfluramine",
     "brand_names": [],
-    "related_conditions": [
-      "Before taking this medicine",
-      "Before taking Fintepla, tell your healthcare provider about all of your medical conditions, including if you:"
-    ]
+    "related_conditions": []
   },
   {
     "drug_name": "Firazyr",
@@ -1098,22 +618,15 @@
   {
     "drug_name": "Firmagon",
     "url": "https://www.drugs.com/firmagon.html",
-    "drug_class": "es: Gonadotropin-releasing hormone antagonists, Hormones / antineoplastics",
+    "drug_class": "gonadotropin-releasing hormone antagonists",
     "generic_name": "degarelix",
     "brand_names": [],
-    "related_conditions": [
-      "Liver enzyme elevations \u2013 these occur in one",
-      "Weight increase \u2013 this may persist for the duration of treatment unless measures are taken, such as dietary restriction and increased exercise, to limit weight gain",
-      "An increase in blood pressure or arrhythmias \u2013 your doctor should monitor your heart during treatment to check for any changes and treatment with Firmagon may need to be modified if these persist",
-      "Constipation \u2013 for many this may improve within a few weeks of taking Firmagon but laxatives should be taken initially to resolve any constipation",
-      "A decrease in sex drive and erectile dysfunction \u2013 this usually persists for the duration of Firmagon treatment but talk to your doctor about other treatments that may help with this.",
-      "Back or joint pain \u2013 for many this improves within a few weeks of taking Firmagon but talk to your doctor about pain relief if it persists or is troublesome"
-    ]
+    "related_conditions": []
   },
   {
     "drug_name": "Flagyl",
     "url": "https://www.drugs.com/flagyl.html",
-    "drug_class": "es: Amebicides, Miscellaneous antibiotics",
+    "drug_class": "amebicides",
     "generic_name": "metronidazole",
     "brand_names": [],
     "related_conditions": []
@@ -1123,33 +636,14 @@
     "url": "https://www.drugs.com/fluconazole.html",
     "drug_class": "Azole antifungals",
     "generic_name": "fluconazole",
-    "brand_names": [
-      "Cryptococcal meningitis.",
-      "Oropharyngeal and esophageal candidiasis"
-    ],
-    "related_conditions": []
-  },
-  {
-    "drug_name": "FluMist",
-    "url": "https://www.drugs.com/flumist.html",
-    "drug_class": "Viral vaccines",
-    "generic_name": "influenza virus vaccine",
     "brand_names": [],
     "related_conditions": []
   },
   {
     "drug_name": "Flutamide",
     "url": "https://www.drugs.com/flutamide.html",
-    "drug_class": "es: Antiandrogens, Hormones / antineoplastics",
+    "drug_class": "antiandrogens",
     "generic_name": "flutamide",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
-    "drug_name": "Folic acid",
-    "url": "https://www.drugs.com/folic_acid.html",
-    "drug_class": "Vitamins",
-    "generic_name": "folic acid",
     "brand_names": [],
     "related_conditions": []
   },
@@ -1164,7 +658,7 @@
   {
     "drug_name": "Fulvestrant",
     "url": "https://www.drugs.com/fulvestrant.html",
-    "drug_class": "es: Estrogen receptor antagonists, Hormones / antineoplastics",
+    "drug_class": "estrogen receptor antagonists",
     "generic_name": "fulvestrant",
     "brand_names": [],
     "related_conditions": []
@@ -1183,9 +677,7 @@
     "drug_class": "Miscellaneous GI agents",
     "generic_name": "teduglutide",
     "brand_names": [],
-    "related_conditions": [
-      "training knowledge assessment questions associated with Gattex REMS (Risk Evaluation and Mitigation Strategy) to ensure they inform patients and caregivers about the possible risks related to Gattex treatment, including:"
-    ]
+    "related_conditions": []
   },
   {
     "drug_name": "Gavreto",
@@ -1193,15 +685,7 @@
     "drug_class": "Multikinase inhibitors",
     "generic_name": "pralsetinib",
     "brand_names": [],
-    "related_conditions": [
-      "muscle cramps",
-      "vomiting",
-      "seizures.",
-      "shortness of breath",
-      "nausea",
-      "swelling",
-      "weakness"
-    ]
+    "related_conditions": []
   },
   {
     "drug_name": "Gazyva",
@@ -1232,9 +716,7 @@
     "url": "https://www.drugs.com/glucagon.html",
     "drug_class": "Glucose elevating agents",
     "generic_name": "glucagon",
-    "brand_names": [
-      "Gvoke, September 10, 2019"
-    ],
+    "brand_names": [],
     "related_conditions": []
   },
   {
@@ -1254,22 +736,6 @@
     "related_conditions": []
   },
   {
-    "drug_name": "Harvoni",
-    "url": "https://www.drugs.com/harvoni.html",
-    "drug_class": "Antiviral combinations",
-    "generic_name": "ledipasvir and sofosbuvir",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
-    "drug_name": "Hemgenix",
-    "url": "https://www.drugs.com/hemgenix.html",
-    "drug_class": "Miscellaneous coagulation modifiers",
-    "generic_name": "etranacogene dezaparvovec-drlb",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
     "drug_name": "Heparin Injection",
     "url": "https://www.drugs.com/heparin.html",
     "drug_class": "Heparins",
@@ -1278,34 +744,12 @@
     "related_conditions": []
   },
   {
-    "drug_name": "Hizentra",
-    "url": "https://www.drugs.com/hizentra.html",
-    "drug_class": "Immune globulins",
-    "generic_name": "immune globulin",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
     "drug_name": "Humira",
     "url": "https://www.drugs.com/humira.html",
-    "drug_class": "es: Antirheumatics, TNF alfa inhibitors",
+    "drug_class": "antirheumatics",
     "generic_name": "adalimumab",
     "brand_names": [],
     "related_conditions": []
-  },
-  {
-    "drug_name": "Ibrance",
-    "url": "https://www.drugs.com/ibrance.html",
-    "drug_class": "CDK 4/6 inhibitors",
-    "generic_name": "palbociclib",
-    "brand_names": [],
-    "related_conditions": [
-      "Nosebleeds.",
-      "Dizziness",
-      "Weakness",
-      "Shortness of breath",
-      "Bleeding or bruising more easily"
-    ]
   },
   {
     "drug_name": "Ibsrela",
@@ -1338,27 +782,8 @@
     "generic_name": "ibrutinib",
     "brand_names": [],
     "related_conditions": [
-      "chronic lymphocytic leukemia (CLL)/small lymphocytic lymphoma (SLL) with 17p deletion in adults",
-      "chronic graft versus host disease (cGVH), after failure of one or more lines of systemic therapy for adult and pediatric patients aged 1 year and older.",
-      "chronic lymphocytic leukemia (CLL)/small lymphocytic lymphoma (SLL) in adults",
-      "Waldenstr\u00f6m\u2019s macroglobulinemia (WM) in adults"
+      "chronic graft versus host disease (cGVH), after failure of one or more lines of systemic therapy for adult and pediatric patients aged 1 year and older."
     ]
-  },
-  {
-    "drug_name": "Imdelltra",
-    "url": "https://www.drugs.com/imdelltra.html",
-    "drug_class": "Bispecific T-cell engagers (BiTE)",
-    "generic_name": "tarlatamab-dlle",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
-    "drug_name": "Imfinzi",
-    "url": "https://www.drugs.com/imfinzi.html",
-    "drug_class": "Anti-PD-1 and PD-L1 monoclonal antibodies (immune checkpoint inhibitors)",
-    "generic_name": "durvalumab",
-    "brand_names": [],
-    "related_conditions": []
   },
   {
     "drug_name": "Imitrex",
@@ -1379,45 +804,8 @@
   {
     "drug_name": "Infliximab",
     "url": "https://www.drugs.com/infliximab.html",
-    "drug_class": "es: Antirheumatics, TNF alfa inhibitors",
+    "drug_class": "antirheumatics",
     "generic_name": "infliximab",
-    "brand_names": [],
-    "related_conditions": [
-      "phototherapy for psoriasis",
-      "vaccination with BCG (Bacille Calmette",
-      "are pregnant or intending to become pregnant",
-      "are breastfeeding or intending to breastfeed.",
-      "Gu\u00e9rin) or if you are scheduled to receive any vaccines",
-      "seizures"
-    ]
-  },
-  {
-    "drug_name": "Injectafer",
-    "url": "https://www.drugs.com/injectafer.html",
-    "drug_class": "Iron products",
-    "generic_name": "ferric carboxymaltose injection",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
-    "drug_name": "Inrebic",
-    "url": "https://www.drugs.com/inrebic.html",
-    "drug_class": "Antineoplastic Janus kinase (JAK) inhibitors",
-    "generic_name": "fedratinib",
-    "brand_names": [],
-    "related_conditions": [
-      "risk primary or secondary (post",
-      "2 or high",
-      "polycythemia vera or post",
-      "essential thrombocythemia) myelofibrosis (MF) in adults.",
-      "Inrebic is used for intermediate"
-    ]
-  },
-  {
-    "drug_name": "Insulin degludec",
-    "url": "https://www.drugs.com/insulin-degludec.html",
-    "drug_class": "Insulin",
-    "generic_name": "insulin degludec",
     "brand_names": [],
     "related_conditions": []
   },
@@ -1443,37 +831,7 @@
     "drug_class": "Anthelmintics",
     "generic_name": "ivermectin",
     "brand_names": [],
-    "related_conditions": [
-      "19 infection, and the FDA has reported \u201cthat currently available clinical trial data do not demonstrate that ivermectin is effective against COVID",
-      "19 or prolonged emergency department observation among outpatients with an early diagnosis of COVID",
-      "19 Treatment.",
-      "approved for treating or preventing COVID",
-      "19, \u00a0at high risk for serious illness, according to a National Institutes of Health article.",
-      "19 except in clinical trials.",
-      "19 in humans.\u201d",
-      "Ivermectin is not FDA"
-    ]
-  },
-  {
-    "drug_name": "Izervay",
-    "url": "https://www.drugs.com/izervay.html",
-    "drug_class": "Anti-angiogenic ophthalmic agents",
-    "generic_name": "avacincaptad pegol",
-    "brand_names": [],
-    "related_conditions": [
-      "Seek immediate medical attention if you notice:",
-      "Patients may be at risk for serious eye conditions, including neovascular AMD, eye infections, increased eye pressure, and retinal detachment."
-    ]
-  },
-  {
-    "drug_name": "Jakafi",
-    "url": "https://www.drugs.com/jakafi.html",
-    "drug_class": "Antineoplastic Janus kinase (JAK) inhibitors",
-    "generic_name": "ruxolitinib",
-    "brand_names": [],
-    "related_conditions": [
-      "Jakafi is approved to treat:"
-    ]
+    "related_conditions": []
   },
   {
     "drug_name": "Jascayd",
@@ -1488,14 +846,6 @@
     "url": "https://www.drugs.com/jaypirca.html",
     "drug_class": "BTK inhibitors",
     "generic_name": "pirtobrutinib",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
-    "drug_name": "Jemperli",
-    "url": "https://www.drugs.com/jemperli.html",
-    "drug_class": "Anti-PD-1 and PD-L1 monoclonal antibodies (immune checkpoint inhibitors)",
-    "generic_name": "dostarlimab-gxly",
     "brand_names": [],
     "related_conditions": []
   },
@@ -1516,14 +866,6 @@
     "related_conditions": []
   },
   {
-    "drug_name": "Jornay PM",
-    "url": "https://www.drugs.com/jornay-pm.html",
-    "drug_class": "CNS stimulants",
-    "generic_name": "methylphenidate hydrochloride",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
     "drug_name": "Journavx",
     "url": "https://www.drugs.com/journavx.html",
     "drug_class": "Miscellaneous analgesics",
@@ -1540,40 +882,10 @@
     "related_conditions": []
   },
   {
-    "drug_name": "Juvederm",
-    "url": "https://www.drugs.com/juvederm.html",
-    "drug_class": "",
-    "generic_name": "hyaluronic acid gel",
-    "brand_names": [
-      "Laser skin surface treatments",
-      "Swelling",
-      "Firmness",
-      "Itching",
-      "Facial Creams",
-      "Bovine-based collagen",
-      "Redness",
-      "Chemical peels",
-      "Lumps/bumps",
-      "Risk of infection",
-      "Bruising",
-      "Discoloration",
-      "Pain/tenderness"
-    ],
-    "related_conditions": []
-  },
-  {
     "drug_name": "Juxtapid",
     "url": "https://www.drugs.com/juxtapid.html",
     "drug_class": "Miscellaneous antihyperlipidemic agents",
     "generic_name": "lomitapide",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
-    "drug_name": "Kapvay",
-    "url": "https://www.drugs.com/kapvay.html",
-    "drug_class": "Antiadrenergic agents, centrally acting",
-    "generic_name": "clonidine",
     "brand_names": [],
     "related_conditions": []
   },
@@ -1596,7 +908,7 @@
   {
     "drug_name": "Kesimpta",
     "url": "https://www.drugs.com/kesimpta.html",
-    "drug_class": "es: CD20 monoclonal antibodies, Selective immunosuppressants",
+    "drug_class": "CD20 monoclonal antibodies",
     "generic_name": "ofatumumab",
     "brand_names": [],
     "related_conditions": []
@@ -1605,31 +917,15 @@
     "drug_name": "Ketamine",
     "url": "https://www.drugs.com/ketamine.html",
     "drug_class": "General anesthetics",
-    "generic_name": "Ketamine",
+    "generic_name": "ketamine",
     "brand_names": [],
     "related_conditions": []
   },
   {
     "drug_name": "Kevzara",
     "url": "https://www.drugs.com/kevzara.html",
-    "drug_class": "es: Antirheumatics, Interleukin inhibitors",
+    "drug_class": "antirheumatics",
     "generic_name": "sarilumab",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
-    "drug_name": "Keytruda",
-    "url": "https://www.drugs.com/keytruda.html",
-    "drug_class": "Anti-PD-1 and PD-L1 monoclonal antibodies (immune checkpoint inhibitors)",
-    "generic_name": "pembrolizumab",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
-    "drug_name": "Kisqali",
-    "url": "https://www.drugs.com/kisqali.html",
-    "drug_class": "CDK 4/6 inhibitors",
-    "generic_name": "ribociclib",
     "brand_names": [],
     "related_conditions": []
   },
@@ -1642,26 +938,10 @@
     "related_conditions": []
   },
   {
-    "drug_name": "Klisyri Ointment",
-    "url": "https://www.drugs.com/klisyri.html",
-    "drug_class": "Topical antineoplastics",
-    "generic_name": "tirbanibulin ointment",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
     "drug_name": "Koselugo",
     "url": "https://www.drugs.com/koselugo.html",
     "drug_class": "Multikinase inhibitors",
     "generic_name": "selumetinib",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
-    "drug_name": "Kratom",
-    "url": "https://www.drugs.com/kratom.html",
-    "drug_class": "",
-    "generic_name": "kratom",
     "brand_names": [],
     "related_conditions": []
   },
@@ -1674,25 +954,9 @@
     "related_conditions": []
   },
   {
-    "drug_name": "Kynmobi",
-    "url": "https://www.drugs.com/kynmobi.html",
-    "drug_class": "Dopaminergic antiparkinsonism agents",
-    "generic_name": "apomorphine hydrochloride",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
-    "drug_name": "Kytril",
-    "url": "https://www.drugs.com/kytril.html",
-    "drug_class": "",
-    "generic_name": "granisetron",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
     "drug_name": "Acetylcysteine",
     "url": "https://www.drugs.com/mtm/acetylcysteine.html",
-    "drug_class": "es: Antidotes, Mucolytics",
+    "drug_class": "antidotes",
     "generic_name": "acetylcysteine",
     "brand_names": [],
     "related_conditions": []
@@ -1762,14 +1026,6 @@
     "related_conditions": []
   },
   {
-    "drug_name": "Dicyclomine",
-    "url": "https://www.drugs.com/mtm/dicyclomine.html",
-    "drug_class": "Anticholinergics / antispasmodics",
-    "generic_name": "dicyclomine",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
     "drug_name": "Ergocalciferol",
     "url": "https://www.drugs.com/mtm/ergocalciferol.html",
     "drug_class": "Vitamins",
@@ -1796,7 +1052,7 @@
   {
     "drug_name": "Glycopyrrolate",
     "url": "https://www.drugs.com/mtm/glycopyrrolate.html",
-    "drug_class": "es: Anticholinergic bronchodilators, Anticholinergics / antispasmodics",
+    "drug_class": "anticholinergic bronchodilators",
     "generic_name": "glycopyrrolate",
     "brand_names": [],
     "related_conditions": []
@@ -1820,16 +1076,8 @@
   {
     "drug_name": "Histrelin (implant)",
     "url": "https://www.drugs.com/mtm/histrelin-implant.html",
-    "drug_class": "es: Gonadotropin releasing hormones, Hormones / antineoplastics",
+    "drug_class": "gonadotropin releasing hormones",
     "generic_name": "histrelin",
-    "brand_names": [],
-    "related_conditions": []
-  },
-  {
-    "drug_name": "Hydromorphone",
-    "url": "https://www.drugs.com/mtm/hydromorphone.html",
-    "drug_class": "Opioids (narcotic analgesics)",
-    "generic_name": "hydromorphone",
     "brand_names": [],
     "related_conditions": []
   },
@@ -1844,7 +1092,7 @@
   {
     "drug_name": "Isotretinoin",
     "url": "https://www.drugs.com/mtm/isotretinoin.html",
-    "drug_class": "es: Miscellaneous antineoplastics, Miscellaneous uncategorized agents",
+    "drug_class": "miscellaneous antineoplastics",
     "generic_name": "isotretinoin",
     "brand_names": [],
     "related_conditions": []
@@ -1858,193 +1106,20 @@
     "related_conditions": []
   },
   {
-    "drug_name": "Azelastine: Package Insert / Prescribing Info",
-    "url": "https://www.drugs.com/pro/azelastine.html",
-    "drug_class": "Nasal antihistamines and decongestants",
-    "generic_name": "azelastine hydrochloride",
-    "brand_names": [],
-    "related_conditions": [
-      "Clinical Pharmacology",
-      "Nonclinical Toxicology",
-      "Clinical Studies",
-      "Description",
-      "Patient Counseling Information",
-      "Use In Specific Populations",
-      "Drug Interactions",
-      "How Supplied/Storage and Handling"
-    ]
-  },
-  {
-    "drug_name": "Brimonidine: Package Insert / Prescribing Info",
-    "url": "https://www.drugs.com/pro/brimonidine.html",
-    "drug_class": "Ophthalmic glaucoma agents",
-    "generic_name": "brimonidine tartrate",
-    "brand_names": [],
-    "related_conditions": [
-      "Clinical Pharmacology",
-      "Nonclinical Toxicology",
-      "Clinical Studies",
-      "Description",
-      "Patient Counseling Information",
-      "Use In Specific Populations",
-      "Drug Interactions",
-      "How Supplied/Storage and Handling"
-    ]
-  },
-  {
     "drug_name": "Bumex: Package Insert / Prescribing Info",
     "url": "https://www.drugs.com/pro/bumex.html",
     "drug_class": "Loop diuretics",
     "generic_name": "bumetanide",
     "brand_names": [],
-    "related_conditions": [
-      "How Supplied/Storage and Handling",
-      "Precautions",
-      "Drug Interactions"
-    ]
-  },
-  {
-    "drug_name": "Divalproex: Package Insert / Prescribing Info",
-    "url": "https://www.drugs.com/pro/divalproex.html",
-    "drug_class": "Fatty acid derivative anticonvulsants",
-    "generic_name": "divalproex sodium",
-    "brand_names": [],
-    "related_conditions": [
-      "Medication Guide",
-      "Clinical Pharmacology",
-      "References",
-      "Nonclinical Toxicology",
-      "Clinical Studies",
-      "Description",
-      "Patient Counseling Information",
-      "Use In Specific Populations",
-      "Drug Interactions",
-      "How Supplied/Storage and Handling"
-    ]
-  },
-  {
-    "drug_name": "Effexor: Package Insert / Prescribing Info",
-    "url": "https://www.drugs.com/pro/effexor.html",
-    "drug_class": "Serotonin-norepinephrine reuptake inhibitors",
-    "generic_name": "venlafaxine hydrochloride",
-    "brand_names": [],
-    "related_conditions": [
-      "Medication Guide",
-      "Patient Counseling Information",
-      "Precautions",
-      "Drug Interactions",
-      "Drug Abuse and Dependence",
-      "How Supplied/Storage and Handling"
-    ]
-  },
-  {
-    "drug_name": "Fluocinolone: Package Insert / Prescribing Info",
-    "url": "https://www.drugs.com/pro/fluocinolone.html",
-    "drug_class": "Topical steroids",
-    "generic_name": "fluocinolone acetonide",
-    "brand_names": [],
-    "related_conditions": [
-      "How Supplied/Storage and Handling",
-      "Precautions",
-      "Storage and Handling",
-      "Patient Counseling Information"
-    ]
-  },
-  {
-    "drug_name": "Fluticasone: Package Insert / Prescribing Info",
-    "url": "https://www.drugs.com/pro/fluticasone.html",
-    "drug_class": "Topical steroids",
-    "generic_name": "fluticasone propionate",
-    "brand_names": [],
-    "related_conditions": [
-      "How Supplied/Storage and Handling",
-      "Clinical Studies",
-      "Precautions",
-      "Patient Counseling Information"
-    ]
-  },
-  {
-    "drug_name": "Hyosyne: Package Insert / Prescribing Info",
-    "url": "https://www.drugs.com/pro/hyosyne.html",
-    "drug_class": "Anticholinergics / antispasmodics",
-    "generic_name": "hyoscyamine sulfate",
-    "brand_names": [],
-    "related_conditions": [
-      "How Supplied/Storage and Handling",
-      "Precautions"
-    ]
-  },
-  {
-    "drug_name": "Imodium: Package Insert / Prescribing Info",
-    "url": "https://www.drugs.com/pro/imodium.html",
-    "drug_class": "Antidiarrheals",
-    "generic_name": "loperamide hydrochloride",
-    "brand_names": [],
-    "related_conditions": [
-      "Clinical Studies",
-      "Patient Counseling Information",
-      "Precautions",
-      "Drug Interactions",
-      "Drug Abuse and Dependence",
-      "How Supplied/Storage and Handling",
-      "Storage and Handling"
-    ]
-  },
-  {
-    "drug_name": "Ipratropium: Package Insert / Prescribing Info",
-    "url": "https://www.drugs.com/pro/ipratropium.html",
-    "drug_class": "Anticholinergic bronchodilators",
-    "generic_name": "ipratropium bromide",
-    "brand_names": [],
-    "related_conditions": [
-      "Patient Counseling Information",
-      "Precautions",
-      "Storage and Handling",
-      "Drug Interactions",
-      "How Supplied/Storage and Handling"
-    ]
-  },
-  {
-    "drug_name": "Javadin: Package Insert / Prescribing Info",
-    "url": "https://www.drugs.com/pro/javadin.html",
-    "drug_class": "Antiadrenergic agents, centrally acting",
-    "generic_name": "clonidine hydrochloride",
-    "brand_names": [],
-    "related_conditions": [
-      "Clinical Pharmacology",
-      "Nonclinical Toxicology",
-      "Description",
-      "Patient Counseling Information",
-      "Use In Specific Populations",
-      "Drug Interactions",
-      "How Supplied/Storage and Handling"
-    ]
+    "related_conditions": []
   },
   {
     "drug_name": "Jencycla: Package Insert / Prescribing Info",
     "url": "https://www.drugs.com/pro/jencycla.html",
-    "drug_class": "es: Contraceptives, Progestogens",
+    "drug_class": "contraceptives",
     "generic_name": "norethindrone",
     "brand_names": [],
-    "related_conditions": [
-      "How Supplied/Storage and Handling",
-      "Precautions",
-      "References",
-      "Patient Counseling Information"
-    ]
-  },
-  {
-    "drug_name": "Ketorolac: Package Insert / Prescribing Info",
-    "url": "https://www.drugs.com/pro/ketorolac.html",
-    "drug_class": "Nonsteroidal anti-inflammatory drugs",
-    "generic_name": "ketorolac tromethamine",
-    "brand_names": [],
-    "related_conditions": [
-      "How Supplied/Storage and Handling",
-      "Precautions",
-      "Medication Guide",
-      "Drug Interactions"
-    ]
+    "related_conditions": []
   },
   {
     "drug_name": "Klayesta: Package Insert / Prescribing Info",
@@ -2052,11 +1127,6 @@
     "drug_class": "Topical antifungals",
     "generic_name": "nystatin",
     "brand_names": [],
-    "related_conditions": [
-      "How Supplied/Storage and Handling",
-      "Precautions",
-      "Storage and Handling",
-      "Patient Counseling Information"
-    ]
+    "related_conditions": []
   }
 ]
