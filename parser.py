@@ -24,7 +24,7 @@ class DrugPageParser:
             Dictionary with extracted drug data or None if parsing fails
         """
         try:
-            soup = BeautifulSoup(html_content, 'html.parser')
+            soup = BeautifulSoup(html_content, 'lxml')
             
             drug_data = {
                 'url': url,
@@ -49,23 +49,16 @@ class DrugPageParser:
     def _extract_drug_name(self, soup: BeautifulSoup, url: str) -> str:
         """Extract the primary drug name from the page."""
         try:
-            # Try h1 tag first
+            # Try common patterns for drug name in heading
             h1 = soup.find('h1')
             if h1:
                 text = h1.get_text(strip=True)
-                drug_name = re.sub(r'\s*[-–].*', '', text).strip()
+                # Remove common suffixes like "- FDA Approved Drugs"
+                drug_name = re.sub(r'\s*[-–]\s*.*', '', text).strip()
                 return drug_name
             
-            # Try page title
-            title = soup.find('title')
-            if title:
-                text = title.get_text(strip=True)
-                drug_name = re.sub(r'\s*[-–].*', '', text).strip()
-                if drug_name:
-                    return drug_name
-            
             # Fallback: extract from URL
-            url_part = url.split('/')[-1].replace('.html', '')
+            url_part = url.rstrip('/').split('/')[-1]
             return url_part.replace('-', ' ').title()
             
         except Exception as e:
@@ -75,15 +68,24 @@ class DrugPageParser:
     def _extract_drug_class(self, soup: BeautifulSoup) -> str:
         """Extract drug class/classification."""
         try:
-            # Look for drug class in common locations
-            for elem in soup.find_all(['div', 'span', 'p']):
-                text = elem.get_text(strip=True)
-                if 'drug class' in text.lower() or 'class:' in text.lower():
-                    # Extract after the label
-                    match = re.search(r'(?:drug\s+)?class\s*:?\s*(.+?)(?:\n|$)', text, re.IGNORECASE)
-                    if match:
-                        return match.group(1).strip()
+            # Look for "Drug Class:" or similar patterns
+            for label in soup.find_all(['strong', 'b', 'span']):
+                if 'drug class' in label.get_text(strip=True).lower():
+                    # Get the next sibling or parent's next element
+                    parent = label.parent
+                    if parent:
+                        text = parent.get_text(strip=True)
+                        # Extract content after the label
+                        match = re.search(r'Drug Class:\s*(.+?)(?:\n|$)', text)
+                        if match:
+                            return match.group(1).strip()
             
+            # Alternative: check data attributes or specific divs
+            for div in soup.find_all('div', class_=re.compile('class', re.I)):
+                text = div.get_text(strip=True)
+                if text and len(text) < 200:
+                    return text
+                    
             return ""
             
         except Exception as e:
@@ -93,13 +95,15 @@ class DrugPageParser:
     def _extract_generic_name(self, soup: BeautifulSoup) -> str:
         """Extract generic name of the drug."""
         try:
-            # Look for generic name
-            for elem in soup.find_all(['div', 'span', 'p']):
-                text = elem.get_text(strip=True)
-                if 'generic name' in text.lower() or 'generic:' in text.lower():
-                    match = re.search(r'generic\s+name\s*:?\s*(.+?)(?:\n|$)', text, re.IGNORECASE)
-                    if match:
-                        return match.group(1).strip()
+            # Look for "Generic Name:" pattern
+            for label in soup.find_all(['strong', 'b', 'span']):
+                if 'generic name' in label.get_text(strip=True).lower():
+                    parent = label.parent
+                    if parent:
+                        text = parent.get_text(strip=True)
+                        match = re.search(r'Generic Name:\s*(.+?)(?:\n|$)', text, re.I)
+                        if match:
+                            return match.group(1).strip()
             
             return ""
             
@@ -108,61 +112,116 @@ class DrugPageParser:
             return ""
 
     def _extract_brand_names(self, soup: BeautifulSoup) -> List[str]:
-        """Extract list of brand names."""
+        """Extract list of brand names reliably."""
         try:
             brand_names = []
             
-            # Look for brand names section
-            for elem in soup.find_all(['div', 'span', 'p']):
-                text = elem.get_text(strip=True)
-                if 'brand name' in text.lower():
-                    # Try to extract list items
-                    parent = elem.parent
-                    if parent:
-                        for sibling in parent.find_next_siblings(['ul', 'ol', 'p', 'div']):
-                            list_items = sibling.find_all('li')
-                            if list_items:
-                                for item in list_items:
-                                    name = item.get_text(strip=True)
-                                    if name:
-                                        brand_names.append(name)
-                            else:
-                                text = sibling.get_text(strip=True)
-                                if text and len(text) < 100:
-                                    brand_names.append(text)
+            # Strategy 1: Look for "Brand Names" or "Brand Name" section
+            for header in soup.find_all(['h2', 'h3', 'strong', 'b', 'span']):
+                header_text = header.get_text(strip=True).lower()
+                
+                if 'brand' in header_text and 'name' in header_text:
+                    # Get the parent container
+                    container = header.parent
+                    if not container:
+                        continue
+                    
+                    # Look for list items in next siblings
+                    for sibling in container.find_next_siblings(['ul', 'ol', 'div', 'p']):
+                        # Stop if we hit another major section
+                        if sibling.find(['h2', 'h3']):
+                            break
+                        
+                        # Extract from <li> elements
+                        for li in sibling.find_all('li'):
+                            text = li.get_text(strip=True)
+                            # Brand names are typically 1-3 words, no special formatting
+                            if text and 2 < len(text) < 100 and not any(char in text for char in ['(', ')', '[', ']', 'http']):
+                                brand_names.append(text)
+                        
+                        # Also check for comma-separated values in text
+                        if not sibling.find_all('li'):
+                            text = sibling.get_text(strip=True)
+                            if text and ',' in text:
+                                parts = [p.strip() for p in text.split(',')]
+                                for part in parts:
+                                    if 2 < len(part) < 100:
+                                        brand_names.append(part)
             
-            return list(set(brand_names)) if brand_names else []
+            # Strategy 2: Look in meta tags or data attributes
+            if not brand_names:
+                # Check for brand info in common div classes
+                for div in soup.find_all('div', class_=re.compile(r'brand|trade', re.I)):
+                    text = div.get_text(strip=True)
+                    if text and 2 < len(text) < 200:
+                        # Split by common delimiters
+                        for item in text.split(','):
+                            item = item.strip()
+                            if 2 < len(item) < 100:
+                                brand_names.append(item)
+            
+            # Remove duplicates and clean
+            brand_names = list(set(brand_names))
+            # Remove generic terms
+            brand_names = [b for b in brand_names if b.lower() not in ['brand names', 'also known as', 'marketed as']]
+            
+            return brand_names if brand_names else []
             
         except Exception as e:
             self.logger.error(f"Error extracting brand_names: {str(e)}")
             return []
 
     def _extract_related_conditions(self, soup: BeautifulSoup) -> List[str]:
-        """Extract list of related medical conditions."""
+        """Extract list of related medical conditions ONLY."""
         try:
             conditions = []
             
-            # Look for conditions/indications
-            patterns = ['used for', 'condition', 'indication', 'treat', 'uses:']
+            # Look for specific sections with medical conditions
+            # Target headings like "Used For:", "Conditions Treated:", "Indications:"
+            target_headers = ['used for', 'condition', 'indication', 'treat']
             
-            for elem in soup.find_all(['div', 'span', 'p', 'h2', 'h3']):
-                text = elem.get_text(strip=True)
-                if any(pattern in text.lower() for pattern in patterns):
-                    parent = elem.parent
-                    if parent:
-                        for sibling in parent.find_next_siblings(['ul', 'ol', 'p', 'div']):
-                            list_items = sibling.find_all('li')
-                            if list_items:
-                                for item in list_items:
-                                    condition = item.get_text(strip=True)
-                                    if condition:
-                                        conditions.append(condition)
-                            else:
-                                text = sibling.get_text(strip=True)
-                                if text and 20 < len(text) < 300:
+            for header in soup.find_all(['h2', 'h3', 'strong', 'b']):
+                header_text = header.get_text(strip=True).lower()
+                
+                # Only match actual medical condition headers
+                if any(target in header_text for target in target_headers):
+                    parent = header.parent
+                    if not parent:
+                        continue
+                    
+                    # Get next sibling that contains the actual conditions
+                    for sibling in parent.find_next_siblings(['ul', 'ol', 'p', 'div']):
+                        # Stop if we hit another section header
+                        if sibling.find(['h2', 'h3']):
+                            break
+                        
+                        # Extract from list items
+                        list_items = sibling.find_all('li')
+                        if list_items:
+                            for item in list_items:
+                                text = item.get_text(strip=True)
+                                # Filter: only medical conditions (50-200 chars, no URLs, no buttons)
+                                if (text and 
+                                    50 < len(text) < 200 and 
+                                    not any(word in text.lower() for word in ['helpful', 'report', 'review', 'read more', 'helpful?', 'http', 'warning', 'side effect']) and
+                                    not text.startswith(('⚠', '✓'))):
                                     conditions.append(text)
+                        else:
+                            # Single paragraph text
+                            text = sibling.get_text(strip=True)
+                            if (text and 
+                                50 < len(text) < 200 and
+                                not any(word in text.lower() for word in ['helpful', 'report', 'review', 'read more', 'warning', 'side effect'])):
+                                conditions.append(text)
+                        
+                        break  # Only process first matching sibling
             
-            return list(set(conditions)) if conditions else []
+            # Remove duplicates and filter
+            conditions = list(set(conditions))
+            # Keep only actual medical conditions (filter out generic text)
+            medical_conditions = [c for c in conditions if len(c.split()) >= 2]
+            
+            return medical_conditions if medical_conditions else []
             
         except Exception as e:
             self.logger.error(f"Error extracting related_conditions: {str(e)}")
@@ -173,5 +232,5 @@ class DrugPageParser:
         if not drug_data:
             return False
         
-        required = {'drug_name', 'url'}
+        required = {'drug_name', 'url', 'generic_name'}
         return all(drug_data.get(field) for field in required)

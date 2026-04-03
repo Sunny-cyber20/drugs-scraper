@@ -226,13 +226,49 @@ class DrugScraper:
         self._print_summary(time.time() - start_time)
 
     def _save_results(self):
-        """Save results to JSON file."""
+        """Save and validate results to JSON file."""
         try:
+            # Normalize and validate each record
+            normalized_results = []
+            
+            for drug in self.results:
+                # Ensure all required fields exist
+                normalized_drug = {
+                    'drug_name': str(drug.get('drug_name', '')).strip() or 'Unknown',
+                    'url': str(drug.get('url', '')).strip(),
+                    'drug_class': str(drug.get('drug_class', '')).strip(),
+                    'generic_name': str(drug.get('generic_name', '')).strip(),
+                    'brand_names': self._clean_list(drug.get('brand_names', [])),
+                    'related_conditions': self._clean_list(drug.get('related_conditions', []))
+                }
+                
+                # Only include if it has essential fields
+                if normalized_drug['drug_name'] and normalized_drug['url']:
+                    normalized_results.append(normalized_drug)
+            
+            # Write normalized JSON
             with open(OUTPUT_FILE, 'w') as f:
-                json.dump(self.results, f, indent=2)
-            logger.info(f"Saved {len(self.results)} results to {OUTPUT_FILE}")
+                json.dump(normalized_results, f, indent=2, ensure_ascii=False)
+            
+            logger.info(f"Saved {len(normalized_results)} validated results to {OUTPUT_FILE}")
+            
         except Exception as e:
             logger.error(f"Error saving results: {str(e)}")
+    
+    def _clean_list(self, items: List) -> List[str]:
+        """Clean and normalize list items."""
+        if not items:
+            return []
+        
+        cleaned = []
+        for item in items:
+            if isinstance(item, str):
+                item = item.strip()
+                # Filter out junk entries
+                if item and len(item) > 2 and not item.startswith(('http', '⚠', '✓')):
+                    cleaned.append(item)
+        
+        return list(set(cleaned))  # Remove duplicates
 
     def _print_summary(self, elapsed_time):
         """Print execution summary."""
