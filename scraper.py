@@ -106,7 +106,7 @@ class DrugScraper:
 
     def run(self, urls_file: Path, resume: bool = True):
         logger.info("="*80)
-        logger.info("Starting Drugs.com Data Scraper")
+        logger.info("Starting Drugs.com Data Scraper - STRICT MODE")
         logger.info(f"Batch size: {self.batch_size}, Delay: {self.request_delay}s")
         logger.info("="*80)
         
@@ -162,22 +162,33 @@ class DrugScraper:
 
     def _save_results(self):
         try:
+            # STRICT: Filter out any records with empty drug_class
             clean_results = []
             for drug in self.results:
+                drug_name = str(drug.get('drug_name', '')).strip()
+                url = str(drug.get('url', '')).strip()
+                drug_class = str(drug.get('drug_class', '')).strip()
+                generic_name = str(drug.get('generic_name', '')).strip()
+                brand_names = self._clean_list(drug.get('brand_names', []))
+                related_conditions = self._clean_list(drug.get('related_conditions', []))
+                
+                # STRICT: REJECT if any required field is empty
+                if not (drug_name and url and drug_class and generic_name):
+                    continue
+                
                 clean_drug = {
-                    'drug_name': str(drug.get('drug_name', '')).strip(),
-                    'url': str(drug.get('url', '')).strip(),
-                    'drug_class': str(drug.get('drug_class', '')).strip(),
-                    'generic_name': str(drug.get('generic_name', '')).strip(),
-                    'brand_names': self._clean_list(drug.get('brand_names', [])),
-                    'related_conditions': self._clean_list(drug.get('related_conditions', []))
+                    'drug_name': drug_name,
+                    'url': url,
+                    'drug_class': drug_class,
+                    'generic_name': generic_name,
+                    'brand_names': brand_names,
+                    'related_conditions': related_conditions
                 }
-                if clean_drug['drug_name'] and clean_drug['url']:
-                    clean_results.append(clean_drug)
+                clean_results.append(clean_drug)
             
             with open(OUTPUT_FILE, 'w') as f:
                 json.dump(clean_results, f, indent=2)
-            logger.info(f"Saved {len(clean_results)} results")
+            logger.info(f"Saved {len(clean_results)} VALIDATED results")
         except Exception as e:
             logger.error(f"Error saving: {str(e)}")
 
@@ -188,7 +199,7 @@ class DrugScraper:
         for item in items:
             if isinstance(item, str):
                 item = item.strip()
-                if item and len(item) > 2 and not any(x in item.lower() for x in ['http', 'click', 'helpful']):
+                if item and len(item) > 2:
                     cleaned.append(item)
         return list(set(cleaned))
 
